@@ -11,10 +11,32 @@
         <h1>Fantasy Swimming League</h1>
     </header>
     <section id="swimmers">
-        <!-- Display swimmers and their bids here -->
+        <h2>Swimmers</h2>
+        <ul>
+            <li>
+                <span class="swimmer-name">Michael Phelps</span>
+                <span class="swimmer-bid">Bid: $0</span>
+            </li>
+            <li>
+                <span class="swimmer-name">Katie Ledecky</span>
+                <span class="swimmer-bid">Bid: $0</span>
+            </li>
+            <!-- Add more swimmers as needed -->
+        </ul>
     </section>
     <section id="bidding-interface">
-        <!-- Add bidding interface here -->
+        <h2>Bidding Interface</h2>
+        <form id="bid-form">
+            <label for="swimmer-select">Select Swimmer:</label>
+            <select id="swimmer-select" name="swimmer">
+                <option value="michael-phelps">Michael Phelps</option>
+                <option value="katie-ledecky">Katie Ledecky</option>
+                <!-- Add more swimmers as needed -->
+            </select>
+            <label for="bid-amount">Enter Bid Amount:</label>
+            <input type="number" id="bid-amount" name="bid-amount" min="0" step="1">
+            <button type="submit">Place Bid</button>
+        </form>
     </section>
     <script src="script.js"></script>
 </body>
